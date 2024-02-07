@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Teko:wght@400;600&display=swap');
+
+:root {
+    --cor-primaria: #F1F6F9;
+    --cor-secundaria: #212A3E;
+    --cor-hover: #9BA4B5;
+    --fonte-titulo: 'Black Ops One', system-ui;
+    --fonte-texto: 'Teko', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria)
+}
+
+.cabecalho {
+    padding: 5% 0% 0% 11%;
+    display: flex;
+   
+    
+}
+
+.navegacao {
+    display: flex;
+    gap: 55px;
+    text-align: center;
+
+}
+
+.cabecalho_links {
+    font-family: var(--fonte-texto);
+    font-weight: 500;
+    font-size: 2rem;
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+}
+
+
+/*.nomes {
+    color:red
+}*/
+
+.layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 6%;
+    gap: 80px;
+}
+
+.layout__conteudo {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.layout__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: var(--fonte-titulo);
+    text-align: justify;
+}
+
+.layout__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: var(--fonte-texto);
+    text-align: justify;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    width: 80%;
+}
+
+.texto_links {
+    font-family: 'Teko', sans-serif;
+    
+    
+}
+
+.botao {
+    /*background-color: white;*/
+    border: 3px outset var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    font-size: 1.125rem;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    width: 80%;
+    text-align: center;
+    margin: 4% 3%;
+    
+
+}
+
+.botao:hover {
+    background-color: var(--cor-hover);
+    /*Background: linear-gradient var(--cor-hover) 0% var(--cor-secundaria) 33,33% blue 66,67% black 100%;*/ 
+}
+
+.imagem {
+    border-radius: 15px;
+    box-shadow: none;
+    width: 70%;
+    
+}
+
+.imagem_link {
+    display: flex;
+    justify-content: center;
+    height: 29px;
+    width: 27px;
+}
+
+.imagem_link2 {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    height: 25px;
+    width: 25px;
+}
+
+.rodape {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--cor-primaria);
+    padding: 20px;
+    bottom: 0 0 0;
+}
+
+@media (max-width: 821px){
+    body {
+        height: 100vh;
+    }
+
+    .layout{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .navegacao{
+        padding: 6%;
+        justify-content: center;
+        width: auto;
+    }
+    .layout__conteudo{
+        width: auto;
+    }
+    .layout__conteudo__titulo {
+        width: 100%;
+    }
+    .layout__conteudo__texto {
+        width: 100%;
+    }
+}
